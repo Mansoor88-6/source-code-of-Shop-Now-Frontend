@@ -1,0 +1,11 @@
+.dropdown{
+    background-color: #262626;
+    color: #efbb6a;
+}
+.search-container{
+    display: flex;
+    justify-content: space-between;
+}
+/* .left {
+    padding-right: 20px;
+} */

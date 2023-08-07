@@ -1,0 +1,29 @@
+.footer-container{
+    height: 480px;
+    background-color: #262626;
+    color: wheat;
+}
+.upper{
+    height: 65%;
+}
+.lower{
+    height: 35%;
+}
+.upper-container{
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    border-bottom: 1px solid wheat;
+}
+.sm-box{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.lower{
+    text-align: center;
+}

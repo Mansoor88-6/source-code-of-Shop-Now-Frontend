@@ -1,0 +1,40 @@
+/* Header Container */
+.header-container {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #262626;
+    color: wheat;
+    height: 40px;
+    width: 100%;
+  }
+  
+  /* Logo */
+  .logo-container {
+    margin-right: 20px;
+    padding: 10px;
+  }
+  
+  /* Categories */
+  .category-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .category {
+    margin: 0 10px;
+  }
+  
+  .search-container{
+    /* top: 0%;
+    right: 43%;
+    position: absolute; */
+    display: flex;
+}
+  
+ 
+  
+  
+  
