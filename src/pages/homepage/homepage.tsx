@@ -8,6 +8,7 @@ import "./homepage.css"
 
 export const Homepage: React.FC = () => {
   const products = useAppSelector(state => state.searchbar.products)
+  console.log("Homepage",products)
   //reason for not dispatching any async thunk: products will already be fetched by header components by the time we populate carousel component with product props
   const menCarouselproducts = products.filter(product => product.category === "men")
   const womenCarouselproducts = products.filter(product => product.category === "women")

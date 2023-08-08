@@ -2,8 +2,6 @@ import React, { useState , useEffect} from 'react';
 import {useAppSelector, useAppDispatch} from "../../utils/hooks"
 import { RootState } from '../../store/store';
 import { fetchProducts } from './searchbaSlice';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import "./searchbar.css"
 
 export const Searchbar = () => {
