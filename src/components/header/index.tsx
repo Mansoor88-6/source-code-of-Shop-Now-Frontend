@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 
 import Searchbar from '../../features/searchbar/searchbar'
 
@@ -15,7 +16,7 @@ import "./index.css"
 const Header: React.FC = () => {
 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [categories] = useState<string[]>(["Men's","Women's","Kid's"])
+    const [categories] = useState<string[]>(["men","women","kids"])
 
     
 
@@ -23,7 +24,10 @@ const Header: React.FC = () => {
       <>
       <header className="header-container">
           <div className="logo-container">
-            <FontAwesomeIcon icon={faCartShopping} style={{color: "#fafafa",}} />
+            <Link to={'/'}>
+              <FontAwesomeIcon icon={faCartShopping} style={{color: "#fafafa",}} />
+            </Link>
+            
           </div>
           <div className="search-container">
             
@@ -31,9 +35,10 @@ const Header: React.FC = () => {
           </div>
           <div className="category-container">
             {categories.map((category, index) => (
-              <span key={index} className="category">
-                {category}
-              </span>
+              
+                <Link to={`/${category}`} key={index} className='category-list'> {category} </Link>
+                
+             
             ))}
           </div>
           
