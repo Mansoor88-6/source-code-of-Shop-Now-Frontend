@@ -30,15 +30,11 @@ const Header: React.FC = () => {
             
           </div>
           <div className="search-container">
-            
             <Searchbar/>
           </div>
           <div className="category-container">
             {categories.map((category, index) => (
-              
                 <Link to={`/${category}`} key={index} className='category-list'> {category} </Link>
-                
-             
             ))}
           </div>
           

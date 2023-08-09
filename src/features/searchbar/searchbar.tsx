@@ -3,6 +3,7 @@ import {useAppSelector, useAppDispatch} from "../../utils/hooks"
 import { RootState } from '../../store/store';
 import { fetchProducts } from './searchbaSlice';
 import "./searchbar.css"
+import { Link } from 'react-router-dom';
 
 export const Searchbar = () => {
 
@@ -45,9 +46,6 @@ export const Searchbar = () => {
 
   return (
     <div className="search-container">
-      <div className="left">
-        {/* <FontAwesomeIcon icon={faCartShopping}  /> */}
-      </div>
       <div className='right'>
         <input
           type="text"
@@ -59,7 +57,9 @@ export const Searchbar = () => {
           <div className="dropdown">
             <ul>
               {suggestions.map((productName, index) => (
-                <li key={index}>{productName}</li>
+                <li key={index}>
+                  <Link to={'/single-product'} state={{productName}} className='link-reset'>{productName}</Link>
+                </li>
               ))}
             </ul>
           </div>

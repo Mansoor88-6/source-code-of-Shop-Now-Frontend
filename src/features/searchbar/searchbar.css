@@ -2,9 +2,12 @@
     background-color: #262626;
     color: #efbb6a;
 }
-.search-container{
-    display: flex;
-    justify-content: space-between;
+.right{
+    height: 30px;
+}
+.link-reset{
+    text-decoration: none;
+    color: inherit;
 }
 /* .left {
     padding-right: 20px;
